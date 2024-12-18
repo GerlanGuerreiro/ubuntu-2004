@@ -50,18 +50,18 @@ export DEBIAN_FRONTEND="noninteractive"
 # Declarando as variáveis utilizadas nas configurações de Rede do Servidor Ubuntu 
 #
 # Variável do Usuário padrão utilizado no Servidor Ubuntu desse curso
-USUARIODEFAULT="vaamonde"
+USUARIODEFAULT="gerlan"
 #
 # Variável da Senha padrão utilizado no Servidor Ubuntu desse curso
 # OBSERVAÇÃO IMPORTANTE: essa variável será utilizada em outras variáveis desse curso
-SENHADEFAULT="pti@2018"
+SENHADEFAULT="gd1202"
 #
 # Variável do Nome (Hostname) do Servidor Ubuntu desse curso
-NOMESERVER="ptispo01ws01"
+NOMESERVER="webserver"
 #
 # Variável do Nome de Domínio do Servidor Ubuntu desse curso
 # OBSERVAÇÃO IMPORTANTE: essa variável será utilizada em outras variáveis desse curso
-DOMINIOSERVER="pti.intra"
+DOMINIOSERVER="dominio.local"
 #
 # Variável do Nome de Domínio NetBIOS do Servidor Ubuntu desse curso
 # OBSERVAÇÃO IMPORTANTE: essa variável será utilizada em outras variáveis desse curso
@@ -74,13 +74,13 @@ DOMINIONETBIOS="$(echo $DOMINIOSERVER | cut -d'.' -f1)"
 FQDNSERVER="$NOMESERVER.$DOMINIOSERVER"
 #
 # Variável do Endereço IPv4 principal (padrão) do Servidor Ubuntu desse curso
-IPV4SERVER="172.16.1.20"
+IPV4SERVER="192.168.0.150"
 #
 # Variável do Nome da Interface Lógica do Servidor Ubuntu Server desse curso
 # CUIDADO!!! o nome da interface de rede pode mudar dependendo da instalação do Ubuntu Server,
 # verificar o nome da interface com o comando: ip address show e mudar a variável INTERFACE com
 # o nome correspondente.
-INTERFACE="enp0s3"
+INTERFACE="wlp3s0"
 #
 # Variável do arquivo de configuração da Placa de Rede do Netplan do Servidor Ubuntu
 # CUIDADO!!! o nome do arquivo de configuração da placa de rede pode mudar dependendo da 
