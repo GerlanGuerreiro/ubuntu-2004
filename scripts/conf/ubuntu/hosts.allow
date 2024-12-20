@@ -26,9 +26,9 @@
 #
 #=================== CONFIGURAÇÃO DA LIBERAÇÃO DOS DAEMON ===================
 #
-# Permitindo a Rede 172.16.1.0/24 se autenticar remotamente no Servidor de OpenSSH
+# Permitindo a Rede 192.168.0.0/24 se autenticar remotamente no Servidor de OpenSSH
 # DAEMON   CLIENT     OPTION
-sshd: 172.16.1.0/24: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-ssh.log
+sshd: 192.168.0.0/24: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-ssh.log
 #
 # Permitindo a Rede 172.16.1.0/24 se autenticar remotamente no Servidor de MySQL
 # DAEMON   CLIENT     OPTION

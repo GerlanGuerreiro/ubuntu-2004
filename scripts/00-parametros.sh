@@ -54,7 +54,7 @@ USUARIODEFAULT="gerlan"
 #
 # Variável da Senha padrão utilizado no Servidor Ubuntu desse curso
 # OBSERVAÇÃO IMPORTANTE: essa variável será utilizada em outras variáveis desse curso
-SENHADEFAULT="gd1202"
+SENHADEFAULT="1202"
 #
 # Variável do Nome (Hostname) do Servidor Ubuntu desse curso
 NOMESERVER="webserver-ubuntu-20.04"
